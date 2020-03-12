@@ -1,13 +1,21 @@
 <template>
-    $END$
+  <div>
+    <category/>
+    <event/>
+    <event-list/>
+  </div>
 </template>
 
 <script>
-    export default {
-        name: 'Container'
-    }
+import Vue from 'vue'
+import Component from 'vue-class-component'
+import Category from './Category.vue'
+import Event from './Event.vue'
+import EventList from './EventList.vue'
+
+@Component({
+  components: { Category, Event, EventList }
+})
+export default class ContainerModal extends Vue {
+}
 </script>
-
-<style scoped>
-
-</style>

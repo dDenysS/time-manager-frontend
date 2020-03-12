@@ -82,7 +82,7 @@ import bus, { types } from '@/utils/bus'
 @Component({
   components: { IconCard, VirtualList }
 })
-export default class AddCard extends Vue {
+export default class Card extends Vue {
     private valid = false
     private dialog = false
     private listNameIcons = listNameIcons
